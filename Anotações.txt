@@ -1,0 +1,106 @@
+CURSO JavaScript:
+-----------------
+Conversão:
+Numero para string: Number(n)
+                    Number.parsInt(n)
+                    Number.parsfloat(n)
+
+String para numero: String(n)
+                    n.toString()
+
+Formatação: 
+s.length //Quantas caracteres tem a string
+s.toUpperCase() //Alterar tudo para letras Maiusculas
+s.toLowerCase() //Alterar tudo para letras Minusculas
+
+n.toFixed(2) //Decimal com duas casas (20.55)
+n.toFixed(2).replace('.' , ',') //Troca o . por , no decimal
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //Tranforma o numero 1500 em R$ 1,500.00 
+
+Operadores: 
+- Artitimeticos: + = soma (5 + 2 = 7)
+                 - = subtração (5 - 2 = 3)
+                 * multiplicação (5 * 2 = 10)
+                 / = divisao (5 / 2 = 2,5)
+                 % = porcentagem/ resto da divisão (5 % 2 = 1)
+                 ** = potencia (5 ^ 2 = 25) 
+- Atribuiçoes
+- relacionais: < (maior) / 5 > 2 = true
+               > (menor) / 7 < 4 = false
+               >=(Maior ou igual) / 8 >= 8 = true
+               <=(Menor ou igual) / 9 <= 7 = false
+               == (igual) / 5 == 5 = true
+               != (diferente) / 4 != 4 = false
+
+- logico: !  (Negação) = true -> false
+                         false -> true
+          && (Conjunção) = true && true -> true
+                           true && false -> false
+                           false && true -> false
+                           false && false -> false  
+          || (Disjunção) = true && true -> true
+                           true && false -> true
+                           false && true -> true
+                           false && false -> false 
+- ternario: ? / : (TESTE? TRUE:FALSE == MEDIA > 7?'APROVADO':'REPROVADO')
+
+Condições:
+        if(condição){
+            true
+        } esle {
+            false
+        }
+        
+
+Repetições: 
+        FOR: 
+            var c = 1
+            //for (inicio; teste; incremento){
+                
+              }
+              for (c = 1; c <=10; c++) {
+
+              } 
+        
+        WHILE:  
+            var c = 1
+                while (c<=10){
+
+                 c++   
+                }
+        
+        DO WHILE 
+            var c = 1
+                do {
+                    c++
+                } while(c <= 10)              
+
+
+ARRAY:
+    Uma variavel composta é uma variavel que tem varios elementos, cada elementos é composto pelo seu valor e uma chave de identificação
+    let/var num = [ ,  , ]
+
+    for (let pos in num ){
+        console.log()
+    }
+
+    BUSCAR VALOR NO VETOR: 
+        num.indexOf(7) //Procura numero no vetor
+
+
+Funções:
+    function ação(parametro){
+
+        return res
+    }        
+
+    acao(5)
+
+    function parimp(n){
+        if (n%2==0){
+            return 'par'
+        } else {
+            return 'Impar'
+        }
+    }
+    let res = parimp(11)
